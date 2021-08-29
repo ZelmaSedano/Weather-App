@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Conditions from '../Conditions/Conditions';
 import { textInput, Radio, Button } from './Forecast.module.css';
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 const Forecast = () => {
   // states that set the value for city, unit, responseObj (json), and error
@@ -26,7 +27,7 @@ const Forecast = () => {
     let uriEncodedCity = encodeURIComponent(city);
 
     fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${uriEncodedCity}&units=${unit}&appid=81eaae9c9ea6f28f239fe73eebafd259`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${uriEncodedCity}&units=${unit}&appid=${API_KEY}`
       // `https://api.openweathermap.org/data/2.5/weather?units=${unit}&q=${uriEncodedCity}&appid=81eaae9c9ea6f28f239fe73eebafd259`
       // {
       //   method: 'GET',

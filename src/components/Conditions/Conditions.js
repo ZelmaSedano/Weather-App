@@ -3,7 +3,7 @@
 // const date = new Date(props.responseObj.list[props.index].dt);
 
 import React from 'react';
-import { Wrapper, Small, Loader } from './Conditions.css';
+import { Wrapper, Small, Loader } from './Conditions.module.css';
 
 const conditions = (props) => {
   // const unixTimestamp = props?.responseObj?.list?.[props?.index]?.dt;
