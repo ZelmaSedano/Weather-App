@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1>Weather Predictions</h1>
+        <h1 className='prediction-text'>Weather Predictions</h1>
       </header>
       <main>
         <Forecast />
